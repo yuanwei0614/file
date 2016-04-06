@@ -1,0 +1,16 @@
+Comment highlighted code		Ctrl + Shift + C
+Uncomment highlighted code		Ctrl + Shift + X
+Duplicate line caret is on		Ctrl + D
+Delete to start of line.		Ctrl + Shift + BackSpace
+Delete to end of line.	    	Ctrl + Shift + Delete
+Go to start of display line.	Alt + Home
+Go to end of display line.		Alt + End
+Line cut.						Ctrl + L
+Line copy.						Ctrl + Shift + T
+Show / hide Messages pane		F2
+Show / hide Management pane		Shift + F2
+Full screen						shift + F11
+Go to end of document.			Ctrl + End
+Go to start of document.		Ctrl + Home
+Previous word					Ctrl + Left
+Next word						Ctrl + Right
