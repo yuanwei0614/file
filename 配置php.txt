@@ -1,0 +1,41 @@
+1.
+vi /etc/nginx/nginx.conf
+
+修改下面两行代码：
+worker_processes  4;
+keepalive_timeout   2;
+
+2.vim /etc/nginx/sites-available/default
+  add index.php to the index line
+  
+  root /usr/share/nginx/html; 
+  means that the document root is the directory /usr/share/nginx/html.
+  
+  service nginx reload
+  
+3.vim /etc/php5/fpm/php.ini
+  set cgi.fix_pathinfo=0;
+  service php5-fpm reload
+  
+4.http://119.29.187.35/zrf.php 
+
+5.
+Ubuntu php5-fpm throws unknown instance on reload
+sudo pkill php5-fpm; sudo service php5-fpm start
+
+ps aux | grep php
+sudo service php5-fpm status
+sudo service php5-fpm stop
+sudo service php5-fpm start
+service php5-fpm restart
+
+6.
+php5-fpm的错误日志是在php5-fpm.conf全局配置中进行设置:
+/var/log/php5-fpm.log
+
+/var/log/upstart/php5-fpm.log
+
+php语法错误：
+php.ini
+/var/log/php_error_log
+
